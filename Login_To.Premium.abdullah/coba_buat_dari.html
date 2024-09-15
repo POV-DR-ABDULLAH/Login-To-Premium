@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>website simple</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    
+    <style>
+
+        * {
+            text-decoration: none;
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        body {
+            margin: 0px;
+            padding: 0px;
+            font-style: italic;
+            background-color: rgba(0,0,0,0.5 );
+        }
+        
+        .wrapper {
+            width: 1100px;
+            margin: auto;
+            position: relative;
+        }
+        
+        .logo a {
+             font-size: 50px;
+             font-weight: 800;
+             float: left;
+             font-family: "Pacifico", sans-serif;
+             color: rgba(72,454,505, 0.4);
+        }
+        
+        .menu {
+            float: right;
+        }
+        
+        nav {
+            width: 100%;
+            margin: auto;
+            display: flex;
+            line-height: 80px;
+            position: sticky;
+            position: -webkit-sticky;
+            top: 0;
+            background: #fff;
+            z-index: 1;
+            background-color: rgba(0,0,0, 0.1);
+            border-bottom: 3px solid rgba(0,0,204, 0.1);
+        }
+        
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        
+        nav ul li {
+            float: left;
+        }
+        
+        nav ul li a {
+            color: lightskyblue;
+            font-weight: bold;
+            text-align: center;
+            padding: 0px 16px 0px 16px;
+            text-decoration: none;
+            font-family: "Pacifico", sans-serif;
+        }
+        
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            margin: auto;
+            display: flex;
+            margin-bottom: 50px;
+        }
+
+        .kolom {
+            margin: 50px;
+            margin-bottom: 50px;
+        }
+
+        .kolom .deskripsi {
+            font-size: 40px;
+            font-weight: bold;
+            font-family: normal;
+            color: yellow;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-family: normal;
+            color: rgb(128, 187, 32);
+        }
+        
+        b {
+            color: black;
+        }
+
+        h1 b {
+            font-family: normal;
+        }
+
+        h2 {
+            font-family: normal;
+            font-weight: 800;
+            font-size: 30px;
+            margin-bottom: 20px;
+            color: rgb(165, 151, 151);
+            width: 100%;
+            line-height: 50px;
+        }
+
+        h2 b {
+            font-family: normal;
+        }
+
+        /* untuk tbl biru */
+
+        a.tbl-biru {
+            background: rgba(72,454,505, 0.4);
+            border-radius: 20px;
+            margin-top: 20px;
+            padding: 15px 20px 15px 20px;
+            color: aquamarine;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        a.tbl-biru:hover {
+            background: rgba(204,0,0, 0.3);
+            text-decoration: none;
+        }
+
+        /* untuk tbl pink */
+
+        a.tbl-pink {
+            background: rgba(204,0,0, 0.3);
+            border-radius: 20px;
+            margin-top: 20px;
+            padding: 15px 20px 15px 20px;
+            color: #fff;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        a.tbl-pink:hover {
+            background: rgba(72,454,505, 0.4);
+            text-decoration: none;
+        }
+
+        p {
+            margin: 10px 0px 10px 0px;
+            padding: 10px 0px 10px 0px;
+        }
+
+        .tengah {
+            text-align: center;
+            width: 100%;
+        }
+
+        /* untuk tutors */
+        
+        .tutor-list {
+            width: 100%;
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .kartu-tutor {
+            width: 20%;
+            margin: 0 auto;
+        }
+
+        .kartu-tutor img {
+            width: 80%;
+            border-radius: 50%;
+        }
+
+        .kartu-tutor p {
+            font-family: "Pacifico", sans-serif;
+            font-weight: 800;
+            font-size: 20px;
+            text-align: center;
+            color: green;
+        }
+
+        /* untuk partners */
+
+        .partner-list {
+            width: 100%;
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .kartu-partner {
+            width: 20%;
+            margin: 0 auto;
+        }
+
+        .kartu-partner img {
+            width: 150px;
+            border-radius: 50%;
+            border: 1px dashed red;
+        }
+
+        /* untuk contact */
+
+        #contact {
+            background: #dededede;
+            padding: 50px 0px 50px 0px ;
+        }
+
+        .footer {
+            width: 100%;
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            margin: auto;
+        }
+
+        .footer-section {
+            width: 20%;
+            margin: 0 auto;
+        }
+
+        .footer-section h3 {
+            color: white;
+        }
+
+        h3 { 
+            font-family: "Pacifico", sans-serif;
+            font-weight: 800;
+            font-size: 30px;
+            margin-bottom: 20px;
+            color: pink;
+            width: 100%;
+            line-height: 50px;
+        }
+
+        /* untuk copy right */
+
+        #copyright {
+            text-align: center;
+            width: 100%;
+            padding: 35px 0px 50px 0px;
+            margin-top: 35px;
+        }
+
+        #copyright .wrapper {
+            font-family: "Pacifico", sans-serif;
+        }
+
+        .log-out {
+            text-align: center;
+            width: 100%;
+            padding: 5px 0px 5px 0px;
+            margin-top: 35px;
+        }
+
+        .coding-coding {
+            font-size: 33px;
+            background: maroon;
+            border-radius: 30%;
+            border: 5px solid purple;
+            color: white;
+            padding: 5px 5px 5px 5px;
+        }
+
+        .ranner {
+            font-size: 30px;
+        }
+
+        .iklan {
+            width: 600px;
+            height: 350px;
+            border-top: 3px solid lightblue;
+            border-left: 3px double orange;
+            border-bottom: 3px dashed gold;
+            border-right: 3px dotted red;
+            float: 0;
+            margin: 0px 100px 0px 260px;
+        }
+
+        
+        .close {
+            width: 15px;
+            height: 15px;
+            background-color: white;
+            border: 3px solid black;
+            border-radius: 50%;
+            position: absolute;
+            margin: 0;
+            margin-left: 580px;
+            font-family: arial;
+            text-align: center;
+            line-height: -150px;
+            cursor: pointer;
+        }
+
+        .cring {
+            font-size: 40px;
+            float: 0;
+            margin: 0px 100px 0px 200px;
+        }
+
+        .nonton b {
+            font-size: 20px;
+            float: 0;
+            margin: 0px 100px 0px 200px;
+        }
+
+        .sekarang {
+            font-size: 30px;
+            width: 150px;
+            height: 30px;
+            border: 1px solid red;
+            border-radius: 30%;
+            float: 0;
+            margin: auto;
+        }
+
+        
+        .TS {
+            font-size: 20px;
+            float: 0;
+            margin: 0px 100px 0px 225px;
+        }
+
+        .iklan-dua {
+            border: 3px solid rgb(255, 1, 242);
+            border-radius: 2%;
+        }
+
+        .sejenak {
+            margin-top: -30px;
+            margin-left: 300px;
+        }
+
+        span {
+            font-size: 40px;
+            color: rgb(255, 255, 255);
+            padding: 0;
+            margin: 0;
+        }
+
+        .ceramah {
+            padding-top: 0;
+            margin: 0;
+            font-size: 25px;
+        }
+
+        .Keutamaan  {
+            font-size: 20px;
+            padding-right: 90px;
+            float: right;
+        }
+
+        .Mendengar {
+            font-size: 20px;
+            padding-right: 40px;
+            float: right;
+            margin-top: -300px;
+        } 
+
+        a {
+            font-weight: bold;
+            color: rgba(72,454,505, 0.4);
+        }
+
+        .kuki {
+            padding: 30px 30px 90px 200px;
+        }
+
+        .kuki h3 {
+            padding-left: 250px;
+            color: white;
+        }
+
+        .kuki p {
+            padding-left: 177px;
+        }
+
+        .yang-lain-satu {
+            border: 5px solid rgba(444,555,0, 0.5);
+            border-radius: 30px;
+            background: rgba(444,555,0, 0.5);
+            cursor: pointer;
+            font-size: 25px;
+            color: white;
+            padding: 7px 7px 7px 7px;
+        }
+
+        .yang-lain-satu:hover {
+            background: rgba(230,0,201, 0.7);
+        }
+
+        .yang-lain-dua {
+            border: 5px solid rgba(0,204,0, 0.5);
+            border-radius: 30px;
+            background: rgba(0,204,0, 0.5);
+            cursor: pointer;
+            font-size: 25px;
+            color: white;
+            padding: 7px 7px 7px 7px;
+        }
+
+        .yang-lain-dua:hover {
+            background: rgba(230,0,201, 0.7);
+        }
+
+        .yang-lain-tiga {
+            border: 5px solid rgba(200,110,0, 0.5);
+            border-radius: 30px;
+            background: rgba(200,110,0, 0.5);
+            cursor: pointer;
+            font-size: 25px;
+            color: white;
+            padding: 7px 7px 7px 7px;
+        }
+
+        .yang-lain-tiga:hover {
+            background: rgba(230,0,201, 0.7);
+        }
+
+        video {
+            max-width: 100%;
+        }
+
+        /* untuk semua */
+
+        @media screen and (max-width: 991.98px) {
+            .wrapper {
+                width: 90%;
+            }
+
+            .logo a {
+                display: block;
+                width: 100%;
+                text-align: center;
+            }
+
+            nav .menu {
+                width: 100%;
+                margin: 0;
+            }
+
+            nav .menu ul {
+                text-align: center;
+                margin: auto;
+                line-height: 60px;
+            }
+
+            nav .menu ul li {
+                display: inline-block;
+                float: none;
+            }
+
+            section {
+                display: block;
+            }
+
+            section img {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+
+            .kartu-tutor {
+                width: 50%;
+            }
+
+            .kartu-partner {
+                width: 50%;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <nav>
+        <div class="wrapper">
+            <div class="logo"><a href="">Rumah Abdullah</a></div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#home">hotel</a></li>
+                        <li><a href="#courses">courses</a></li>
+                        <li><a href="#tutors">tutors</a></li>
+                        <li><a href="#partners">partners</a></li>
+                        <li><a href="#contact">content</a></li>
+                        <li><a href="Login.html" class="tbl-biru">log in</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="wrapper">
+        <!-- untuk hotel -->
+        <section id="home">
+            <img src="../img.abdullah/sasuke.jpg">
+            <div class="kolom">
+                <p class="diskripsi"><h1>belajar bersabar menghadapi ujian dari <b> ' Allah ' </b></h1></p>
+                <br>
+                <h2>Sesungguhnya<b> ' Allah ' </b> akan bersama orang yang bersabar</h2>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus nam, deleniti magnam, repellat necessitatibus, quae minus quasi inventore excepturi nihil ullam autem quibusdam. Sed, minus quidem veritatis voluptas saepe corporis est deserunt neque adipisci magnam voluptatum enim, nesciunt recusandae pariatur ea itaque nobis architecto debitis repellat. Dolor, illum praesentium quo excepturi reprehenderit eum fugiat labore similique impedit ad quos aliquam. Nisi placeat quis ut? Vel iure, soluta aperiam beatae distinctio impedit hic neque placeat obcaecati tempore tenetur id eligendi aut consectetur laboriosam possimus recusandae blanditiis autem cumque, dicta cum dolores mollitia ducimus facilis. Sint ad blanditiis eius, maiores voluptatum a.</p>
+                <p><a href="pelajari _lebih_lanjut.html" class="tbl-pink">jangan pelajari lebihlanjut</a></p>
+
+            </div>
+        </section>
+
+        <!-- untuk courses -->
+        <section id="courses">
+            <div class="kolom">
+                <p class="deskripsi">You Nedd people This</p>
+                <h2>Online Courses</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem odio, deserunt fuga totam voluptates quae consectetur magnam ratione ut quibusdam pariatur, deleniti consequuntur animi culpa optio repudiandae illo natus molestias at! Similique modi veniam illo dolorem facere laudantium, fuga consequatur quisquam corrupti veritatis non quos aliquam tempore sed, vero error!</p>
+                
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi unde, minima, at asperiores cupiditate dignissimos in perferendis eius repellat beatae ipsam hic fuga blanditiis quo velit aliquam reprehenderit enim consequatur.</p>
+                <p><a href="pelajari _lebih_lanjut.html" class="tbl-biru">pelajari lebih sedikit</a></p>
+
+            </div>
+            <img src="../img.abdullah/obito.jpg">
+        </section>
+
+        
+        <br><br><br><br><br><br><br><br><br><br>
+
+        <div class="iklan-dua">
+            <h1 class="sejenak"><span>Berhenti Dan Dengarkan Sejenak</span></h1>
+            <br><br><br>
+            <p class="ceramah">Ceramah Dari Ustadz <b>' dr. Firanda Andirja, Lc, M.A. '</b></p>
+
+            <video controls src="../Video.abdullah/khutbah_jum'at_ustadz Firanda_Andirja.mp4"></video>
+
+            <p class="Keutamaan"><b>Ke Utamaan Mendengar Ceramah</b></p>
+
+            <p class="Mendengar">
+                1. Menambah Keilmuan 
+                <br><br>
+                2. Sebagai Sarana Untuk Selalu
+                <br>
+                 Melaksanakan Nasihat Kebajikan
+                <br><br>
+                3. Mengasah Daya Ingat Dan Konsentrasi
+                <br><br>
+                4. Menenangkan Jiwa
+            </p>
+
+        </div>
+
+        <br><br><br><br><br><br><br><br><br><br>
+
+        <!-- untuk tutors -->
+         <section id="tutors">
+            <div class="tengah">
+                <div class="kolom">
+                    <p class="deskripsi">Pilih salah satu tutor</p>
+                    <h2>Tutors</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus dolorem dolores assumenda eius quo blanditiis laborum, inventore similique nisi, mollitia incidunt id dignissimos quia! Molestias necessitatibus atque debitis doloribus reiciendis?</p>
+                </div>
+
+            <div class="tutor-list">
+                <div class="kartu-tutor">
+                    <img src="../img.abdullah/baki.jpg  ">
+                    <p><a href="TUTORS.html#anime-1">' Baki '</a></p>
+                </div>
+                <div class="kartu-tutor">
+                    <img src="../img.abdullah/naruto.jpg">
+                    <p><a href="TUTORS.html#anime-2">' Naruto '</a></p>
+                </div>
+                <div class="kartu-tutor">
+                    <img src="../img.abdullah/kratos.jpg">
+                    <p><a href="TUTORS.html#anime-3">' Kratos '</a></p>
+                </div>
+                <div class="kartu-tutor">
+                    <img src="../img.abdullah/gojo_sitaru.jpg">
+                    <p><a href="TUTORS.html#anime-4">' Gojo '</a></p>
+                </div>
+                <div class="kartu-tutor">
+                    <img src="../img.abdullah/gaku2.jpg">
+                    <p><a href="TUTORS.html#anime-5">' Goku '</a></p>
+                </div>
+            </div>
+
+         </section>
+         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+        <div class="iklan">
+            <div class="close">x</div>
+            <h1 class="cring">BOBOIBOY</h1>
+            <br>
+            <p class="nonton"><b>Yuk Nonton Boboiboy, Dll.</b></p>
+            <br><br><br>
+
+            <div class="kartun-dll">
+                <p class="sekarang"><a  href="Kartu.html#boboiboy">Watch now</a></p>
+            </div>
+
+            <br><br><br>
+            <p class="TS">Tonton Sekarang</p>
+
+            </div>
+        </div>
+
+        <br><br><br><br><br><br><br><br><br><br>
+
+        <!-- untuk partners -->
+         <section id="partners">
+            <div class="tengah">
+                <div class="kolom">
+                    <p class="deskripsi">Our Top Partners</p>
+                    <h2>partners</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ut quaerat perspiciatis commodi minus consectetur ab tenetur in ea! Sint sed voluptatem aspernatur reiciendis, obcaecati accusamus repudiandae culpa excepturi maiores adipisci ipsum quos saepe ipsa enim tempore at officia architecto in odit facere explicabo esse nobis voluptate. Facilis, dolores libero.</p>
+                </div>
+                <div class="partner-list">
+                    <div class="kartu-partner">
+                        <img src="../img.abdullah/sekolah_anime.jpg"/>
+                    </div>
+                    <div class="kartu-partner">
+                        <img src="../img.abdullah/mobillegen.jpg"/>
+                    </div>
+                    <div class="kartu-partner">
+                        <img src="../img.abdullah/thomas.jpg"/>
+                        <p class="ranner"><a href="TUTORS.html#anime-6">'the maze ranner'</a></p>
+                    </div>
+                    <div class="kartu-partner">
+                        <img src="../img.abdullah/one_pice.jpg"/>
+                    </div>
+                    <div class="kartu-partner">
+                        <img src="../img.abdullah/dragon_ball.jpg"/>
+                    </div>
+                </div>
+            </div>
+         </section>
+    
+
+    <!-- untuk contact -->
+
+    <div id="contact">
+        <div class="wrapper">
+            <div class="footer">
+                <div class="footer-section">
+                    <h3>Rumah Abdullah</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste voluptate eveniet commodi voluptatem consequatur? Repellat soluta illum dicta laborum, iste excepturi. Fuga assumenda repellendus illo illum aut vero nobis quisquam reiciendis id minus dignissimos numquam odit, sequi omnis, </p>
+                </div>
+                <div class="footer-section">
+                    <h3>about</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores provident molestiae quas nemo, hic quod.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>contact</h3>
+                    <p>JL. pandang-pandang no 15 in makassar</p>
+                    <p>KODE POS: 963</p>
+                </div>
+                <div class="footer-section">
+                    <h3>social</h3>
+                    <p><b>YOUTUBE: </b>Belajar Bersabar Menghadapi Ujian</p>
+                </div>
+                <div class="kuki">
+                    <h3>Website Abdullah</h3>
+                    <p><b>Website yang lain : </b>Silakan Buka Yang Ada Di Bawah Ini</p>
+
+                    <br><br><br>
+                    
+                    <a href="project_1.html" class="yang-lain-satu">Projek Yang Pertama</a>
+                    
+                    <a href="project_2.html" class="yang-lain-dua">Projek Yang Kedua</a>
+
+                    <a href="project_3.html" class="yang-lain-tiga">Projek Yang Ketiga</a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="log-out">
+    <a class="coding-coding" href="ertanyaan.html">Log Out ></a>
+    </div>
+
+    <!-- untuk copyright -->
+
+    <div id="copyright">
+        <div class="wrapper">
+            &copy; 2027. <b>Rumah Abdullah</b> All Right Reserved.
+        </div>
+    </div>
+
+    <a href="https://www.youtube.com/">yaoutube</a>
+
+</body>
+</html>
+

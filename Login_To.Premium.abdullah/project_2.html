@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>standing kasus</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+<style>
+    * {
+        text-decoration: none;
+    }
+
+    :root {
+        --darkgray: #2d3748;
+        --gray:#4a5568;
+        --grylight: #f7fafc;
+        --primary: #6b46c1;
+    }
+
+    body {
+        background-color: rgb(0, 0, 0, 0.1 );
+        box-sizing: border-box;
+        padding: 0 10%;
+        margin: 0;
+        font-family: "Pacifico", sans-serif;
+        font-style: italic;
+    }
+
+    .navbar {
+        background: white;
+        display: flex;
+        height: 85px;
+        display: flex;
+        top: 0;
+        padding: 0 10%;
+        align-items: center;
+        justify-content: space-between;
+        position: sticky;
+        position: -webkit-sticky;
+        position: relative;
+        z-index: 1;
+        flex-wrap: wrap;
+        box-shadow: 0 4px 8px 0 rgb(1,1,1,0.2);
+    }
+
+    .navbar h1 {
+        font-size: 20px;
+        font-weight: bolder;
+    }
+
+    .nav-menu {
+        display: flex;
+        gap: 30px;
+    }
+
+    .nav-menu p {
+        color: rgb(0, 0, 0, 0.6 );
+        font-size: 20px;
+    }
+    
+    .nav-menu  {
+        width: 35%;
+        margin-right: -100px;
+    }
+
+    .nav-menu img {
+        width: 5%;
+        height: 5%;
+        border-radius: 50%;
+        margin-top: 20px;
+    }
+
+    .hero-container {
+        display: flex;
+        height: 470px;
+    }
+
+    .hero-container > div {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-container h1 {
+        font-size: 60px;
+        width: 360px;
+        margin: 20px 0;
+        font-weight: bolder;
+    }
+
+    .hero-container p {
+        font-size: 30px;
+        color: var(--gray);
+    }
+
+    .hero-container > img {
+        width: 50%;
+        height: 323px;
+        align-self: center;
+    }
+
+    .description-container {
+        height: 280px;
+        margin: 40px 0;
+        padding: 0 10%;
+        display: flex;
+    }
+    
+    .description-container div {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        box-shadow: 0px 4px 8px 0px rgb(1,1,1,0.1);
+        border-top: rgb(240, 240, 240);
+    }
+
+    .description-container h2 {
+        color: var(--darkgray);
+        font-weight: bolder;
+    }
+
+    .description-container div div { 
+        width: 500px;
+    }
+
+    .description-container img {
+        width: 40%;
+        object-fit: cover;
+    }
+
+    .description-left-footer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+.content-container {
+    height: 500px; 
+    margin: 40px 0;
+    padding: 0 10%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.content-container .card {
+    height: 100%;
+}
+
+.crad {
+    box-shadow: 0 2px 4px 0 rgb(1,1,1,0.1);
+    transform: 0.3s;
+    padding: 20px;
+}
+
+.crad:hover {
+    box-shadow: 0 2px 4px 0 rgb(1,1,1,0.2);
+    cursor: pointer;
+}
+
+.card img {
+    object-fit: fill;
+    height: 199px;
+    width: 100%;
+}
+
+.card h3 {
+    font-size: 20px;
+    margin: 0 15px 0 0;
+}
+
+.card p {
+    color: var(--gray);
+    font-size: 16px;
+}
+
+.card .card-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.what-is-coding {
+    height: 500px;
+    padding: 5% 5%;
+    display: flex;
+    margin-top: 0px;
+    margin: 40px 0;
+}
+
+.what-is-coding h1 {
+    font-size: 50px;
+}
+
+.what-is-coding p {
+    color: var(--gray);
+}
+
+.what-is-coding div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 48%;
+    background: yellow;
+    background: var(--grylight);
+}
+
+.what-is-coding div div {
+    width: 400px;
+}
+
+.what-is-coding img {
+    width: 52%;
+    background: red;
+}
+
+.what-is-coding div .footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-coding {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 10%;
+    margin: 40px 0;
+}
+
+.btn {
+    background: var(--primary);
+    outline: none;
+    border: none;
+    padding: 10px 15px;
+    color: lightblue;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    height: 80px;
+}
+
+footer div {
+    display: flex;
+    gap: 30px;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    margin-right: 37px;
+}
+
+footer div img {
+    border-radius: 50%;
+}
+
+.keluar p {
+    font-size: 30px;
+    padding: 10px 0px 50px 0px;
+}
+
+.keluarr {
+    list-style-type: none;
+    border: 5px solid lightblue;
+    border-radius: 30px;
+    background: blue;
+    cursor: pointer;
+    color: white;
+    padding: 7px 7px 7px 7px;
+    width: 105px;
+    height: -0px;
+    border-radius: 20px;
+    font-family: normal;
+    margin-left: 650px;
+}
+
+.keluarr:hover {
+    background-color: aqua;
+    transition: .9s ease-in-out;
+    border: 3px solid lightblue;
+    border-radius: 30%;
+    transition-delay: .3s;
+}
+
+p {
+    font-family: normal;
+}
+
+
+/*  .yang-lain-tiga {
+            border: 5px solid rgba(200,110,0, 0.5);
+            border-radius: 30px;
+            background: rgba(200,110,0, 0.5);
+            cursor: pointer;
+            font-size: 25px;
+            color: white;
+            padding: 7px 7px 7px 7px;
+        } */
+
+    /* utils */
+
+    .font-weight-bold {
+        font-weight: bold;
+    }
+
+
+    @media only screen and (max-width: 420px) {
+    .hero-container {
+        flex-wrap: wrap;
+        height: 100%;
+    }
+
+    .hero-container div {
+        width: 100%;
+        height: 250px;
+    }
+
+    .hero-container img {
+        width: 100%;
+        width: 100%;
+    }
+
+    .hero-container h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .hero-container p {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .content-container {
+        flex-wrap: wrap;
+    }
+
+    .description-container {
+        flex-wrap: wrap;
+        height: 100%;
+    }
+
+    .description-container h2, .description-container p {
+        text-align: center;
+    }
+
+    .description-container div {
+        width: 100%;
+        padding: 5%;
+    }
+
+    .description-container div div {
+        width: 100%;
+    }
+
+    .description-container img {
+        width: 100%;
+        height: 200px;
+    }
+    .what-is-coding {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+
+    .what-is-coding div {
+        width: 100%;
+    }
+
+    .what-is-coding div div {
+        width: 100%;
+    }
+
+    .what-is-coding img {
+        width: 100%;
+    }
+
+    .what-is-coding h1 {
+        font-size: 36px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .what-is-coding p {
+        width: 100%;
+        font-size: 18px;
+        text-align: center; 
+    }
+
+    nav .nav-menu {
+        display: none;
+    }
+
+    .card img  {
+        height: 200px;
+    }
+
+    .button-coding {
+        justify-content: center;
+    }
+
+    footer {
+        flex-direction: column-reverse;
+    }
+    
+}
+    
+</style>
+
+</head>
+<body>
+
+    <nav class="navbar">
+        <h1>ga suka coding?</h1>
+        <div class="nav-menu">
+            <p>home</p>
+            <p>articles</p>
+            <img src="../abdullah.gambar/inst.jpg" alt="instagram">
+            <img src="../abdullah.gambar/twitear.jpg" alt="twiter">
+            <img src="../abdullah.gambar/in.jpg" alt="linkedi">
+        </div>
+    </nav>
+    <section class="hero-container">
+        <div>
+            <div>
+                <h1>make better coffee</h1>
+                <p>why learn how to blog</p>
+            </div>
+        </div>
+        <img src="../abdullah.gambar/gamer.jpg" alt="gamer">
+    </section>
+
+    <section class="description-container">
+        <div>
+            <div>
+                <h2>long established</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia facilis quia quaerat voluptatibus impedit assumenda unde quae reiciendis, et, ea sapiente asperiores alias debitis iste harum ratione distinctio sint fugiat.</p>
+            </div>
+            <div class="description-left-footer">
+                <p>may 55th 2020</p>
+                <p class="font-weight-bold"><a href="#">read more</a></p>
+            </div>
+        </div>
+        <img src="../abdullah.gambar/geming.jpg" alt="geming">
+    </section>
+    <section class="content-container">
+        <div class="card">
+            <img src="../abdullah.gambar/kalajengking saber.jpeg" alt="">
+            <div class="card-body">
+                <h3>long established</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit rem alias tempore molestiae error libero sapiente nemo architecto necessitatibus beatae incidunt culpa, praesentium deleniti dolorem reiciendis maxime voluptatem non excepturi!</p>
+            </div>
+            <div class="card-footer">
+                <p>may 55th 2020</p>
+                <p class="font-weight-bold"><a href="#">read more</a></p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="../abdullah.gambar/gojo sitoru.webp" alt="">
+            <div class="card-body">
+                <h3>long established</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit rem alias tempore molestiae error libero sapiente nemo architecto necessitatibus beatae incidunt culpa, praesentium deleniti dolorem reiciendis maxime voluptatem non excepturi!</p>
+            </div>
+            <div class="card-footer">
+                <p>may 55th 2020</p>
+                <p class="font-weight-bold"><a href="#">read more</a></p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="../abdullah.gambar/topeng.jpg" alt="">
+            <div class="card-body">
+                <h3>long established</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit rem alias tempore molestiae error libero sapiente nemo architecto necessitatibus beatae incidunt culpa, praesentium deleniti dolorem reiciendis maxime voluptatem non excepturi!</p>
+            </div>
+            <div class="card-footer">
+                <p>may 55th 2020</p>
+                <p class="font-weight-bold"><a href="#">read more</a></p>
+            </div>
+        </div>
+    </section>
+    <section class="what-is-coding">
+        <div>
+            <div>
+                <h1>what is coding?</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga veritatis facilis, harum voluptas minima, fugit et, sunt enim cumque ipsa earum unde quos quam modi eaque incidunt totam magni reprehenderit.</p>
+            </div>
+            <div class="footer">
+                <p>may 55th 2020</p>
+                <p class="font-weight-bold"><a href="#">read more new</a></a></p>
+            </div>
+        </div>
+        <img src="../abdullah.gambar/bee.jpg" alt="tanjiro">
+    </section>
+    <section class="button-coding">
+        <button class="btn">See More</button>
+    </section>
+
+    <div class="keluar">
+        <p class="keluarr"><a href="coba buat dari.html">Log Out </a></p>
+    </div>
+
+    <footer>
+        <p><b>Hot Anime</b> 2020 copyright all rights reserved</p>
+        <div>
+            <img src="../abdullah.gambar/inst.jpg" alt="instagram">
+            <img src="../abdullah.gambar/in.jpg" alt="linkedi">
+            <img src="../abdullah.gambar/twitear.jpg" alt="twiter">
+        </div>
+    </footer>
+    
+</body>
+</html>

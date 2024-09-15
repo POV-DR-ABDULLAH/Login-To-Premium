@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <titlet></title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    
+
+<style>
+    
+    * {
+        text-decoration: none;
+    }
+
+    html, body {
+    margin: 0;
+    padding: 0;
+    font-style: italic;
+    
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #7f7777;
+    line-height: 1.65;
+    padding-bottom: 1000px;
+}
+
+
+/* latihan 1 */
+.container-satu {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.kolom-utama, .sidebar-satu, .sidebar-dua {
+    margin-right: 50px;
+}
+
+.sidebar-satu {
+    margin-bottom: 20px;
+ }
+
+.kolom-utama {
+  flex-grow: 3;
+}
+
+.sidebar-dua {
+   flex-grow: 1;
+}
+
+.sidebar-satu ul, li, a {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+li a {
+    margin-left: -70px;
+}
+
+
+/* latihan 2 */
+.container-dua {
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+.layanan {
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.layanan.satu { background-color: aquamarine;}
+
+.layanan.dua { background-color: gold;}
+
+.layanan.tiga { background-color: green;}
+
+.layanan.satu, .layanan.dua, .layanan.tiga {
+    color: white;
+}
+
+/* latihan 3 */
+.container-tiga {
+    max-width: 800px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+
+.thumbnail {
+    width: 50%;
+}
+
+.thumbnail img {
+    width: 200px;
+}
+
+a {
+    color: rgba(0,0,0, 0.7);
+}
+
+/* latihan 4 */
+.container-empat {
+    max-width: 800px;
+    margin: 50px auto;
+    display: flex;
+}
+
+.card {
+    border: 1px dashed #aaa;
+    border-radius: 10px;
+    background-color: #eee;
+    overflow: hidden;
+    margin: 10px;
+    flex: 1;
+    width: 100%;
+}
+
+.card .header {
+    height: 150px;
+    background-image: url(../abdullah.gambar/pemandanga.jpg);
+}
+
+.card .content {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.card.besar {
+    transform: scale(1.12);
+}
+
+button {
+    
+    cursor: pointer;
+} 
+
+/* latihan 5 */
+.container-lima {
+    max-width: 500px;
+    height: 500px;
+    margin: 50px auto;
+    border-left: 3px dashed rgb(106, 195, 250);
+    border-right: 3px solid rgb(105, 255, 110);
+    border-top: 3px dotted rgb(255, 95, 95);
+    border-bottom: 3px double rgb(248, 251, 91);
+    display: flex;
+}
+
+.kotak {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    color: yellowgreen;
+    text-align: center;
+    line-height: 100px;
+    margin: auto;
+    display: flex;
+}
+
+.kotak span {
+    margin: auto;
+    margin-left: -1px;
+    font-weight: bold;
+}
+
+span {
+    color: white;
+}
+
+h3, h2, h4 {
+    font-family: 'pacifico', sans-serif;
+}
+
+/* responssiv */
+@media( min-width: 600px )  {
+    .container-dua {
+    display: flex;
+    justify-content: space-between;
+    }
+
+    .layanan {
+        width: 30%;
+    }
+
+    .thumbnail {
+        width: 25%;
+    }
+}
+</style>
+
+</head>
+<body>
+
+<!-- latihan 1 - kolom -->
+ <div class="container-satu">
+    <div class="sidebar-satu">
+        <h3>link</h3>
+        <ul>
+        <li><a href="">link 1</a></li>
+        <li><a href="">link 2</a></li>
+        <li><a href="">link 3</a></li>
+        <li><a href="">link 4</a></li>
+        <li><a href="">link 5</a></li>
+        </ul>
+    </div>
+    <div class="kolom-utama">
+        <h2>judul artikal</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque reprehenderit velit explicabo? Beatae inventore ducimus corporis, cum adipisci hic non esse ex nisi, eaque nam. A illum, itaque nihil sed repudiandae maiores veritatis? Quae asperiores dolor quibusdam rem illum officiis accusamus autem architecto, quos, cumque facilis, optio excepturi iure voluptates mollitia obcaecati necessitatibus aperiam cum impedit iusto sapiente voluptatum natus assumenda. Dolore sequi magnam qui facere voluptates vero ducimus quod perferendis cum ipsum unde eius soluta maiores deserunt quia error excepturi nisi eveniet quam magni porro, neque saepe iure. Ex beatae earum fuga neque incidunt sint aliquid eius deleniti distinctio. </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, delectus? Repellendus, dolorem libero? Quia rem odit asperiores, officiis voluptatum qui alias et hic nulla iste accusamus iusto sequi vel reiciendis voluptas omnis non doloremque doloribus nemo labore eaque laborum. Quasi dolores dolorem velit impedit odit explicabo, laboriosam porro. Quae, maiores?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium beatae consequuntur ipsum delectus obcaecati facilis, tempore magni non, eos, quae cupiditate dignissimos reiciendis esse! Nobis impedit dolore nostrum vero hic!</p>
+    </div>
+    <div class="sidebar-dua">
+        <h3>Penjelasan</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, minus pariatur voluptatum consequuntur repellat rem, at atque inventore doloribus sunt unde! Voluptatum repellendus ducimus facere!</p>
+    </div>
+ </div>
+<!-- akhir latihan 1 -->
+
+<!-- latihan 2 - service / features -->
+ <div class="container-dua">
+    <div class="layanan satu">
+        <h4>layanan 1</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, delectus.</p>
+    </div>
+    <div class="layanan dua">
+        <h4>layanan 2</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, nobis repudiandae omnis voluptatem blanditiis commodi!</p>
+    </div>
+    <div class="layanan tiga">
+        <h4>layanan 3</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium eligendi, molestiae suscipit debitis accusamus rerum numquam fugiat quas neque ut.</p>
+    </div>
+ </div>
+ <!-- akhir latihan 2 -->
+
+ <!-- latihan 3 - gallery -->
+  <div class="container-tiga">
+    <div class="thumbnail">
+        <img src="../abdullah.gambar/yuji itadori.jpeg">
+    </div>
+    <div class="thumbnail">
+        <img src="../abdullah.gambar/yuji.jpeg ">
+    </div>
+    <div class="thumbnail">
+        <img src="../abdullah.gambar/helkar.jpeg">
+    </div>
+    <div class="thumbnail">
+        <img src="../abdullah.gambar/hayato.jpeg">
+    </div>
+    <div class="thumbnail">
+        <img src="../abdullah.gambar/cave.jpeg">
+    </div>
+    <div class="thumbnail">
+        <img src="../abdullah.gambar/cyber.jpeg">
+    </div>
+  </div>
+<!-- akhir latihan 3 -->
+
+<!-- latihan 4 - card -->
+<div class="container-empat">
+    <div class="card">
+        <div class="header"></div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam assumenda natus architecto iure rerum ullam doloribus non exercitationem voluptates minima.</p>
+            <button>Buy Now!</button>
+        </div>
+    </div>
+    <div class="card besar">
+        <div class="header"></div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam assumenda natus architecto iure rerum ullam doloribus non exercitationem voluptates minima.</p>
+            <button>Buy Now!</button>
+        </div>
+    </div>
+    <div class="card">
+        <div class="header"></div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam assumenda natus architecto iure rerum ullam doloribus non exercitationem voluptates minima.</p>
+            <button>Buy Now!</button>
+        </div>
+    </div>
+</div>
+<!-- akhir latihan 4 -->
+
+<!-- latihan 5 - centering -->
+ <div class="container-lima">
+    <div class="kotak"><span><a href="../coba-coba buat sesuatu/coba buat dari.html">Kembali</a></span></div>
+ </div>
+    
+</body>
+</html>

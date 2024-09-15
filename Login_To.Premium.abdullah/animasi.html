@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>animasi</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <style>
+
+        * {
+            text-decoration: none;
+        }
+
+        :root {
+            --gradient1:linear-gradient( 173.1deg,  rgba(226,66,249,0.94) 10.2%, rgba(79,147,249,1) 77.3% );
+
+            --gradient2: linear-gradient(109.6deg, rgba(61, 245, 176, 1) 11.2%, rgba(9, 111, 224,1)91.1%);
+        }
+
+        body {
+            min-height: 100vh;
+            background-color: #eaeaea;
+            background-image: var(--gradient2);
+            background-size: 200%;
+            font-family: 'pacifico', sans-serif;
+            animation: gradient 25s infinite alternate;
+            display: flex;
+            font-style: italic;
+            /* justify-content: center;
+            align-items: center; */
+            
+        }
+
+        @keyframes gradient {
+            0%   {
+                background-position: left;
+            }
+
+            100% {
+                background-position: right;
+            }
+        }
+
+        a {
+            color: skyblue;
+        }
+
+        a:hover {
+            transition: 3s;
+            color: aqua;
+        }
+
+        h1 {
+            font-size: 5rem;
+            text-align: center;
+            margin: auto;
+            color: lightskyblue;
+            background-image: var(--gradient1);
+            -webkit-background-clip: text;
+            background-clip: text;
+            background-size: 300%;
+            color: transparent;
+            filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.7));
+        }
+        
+        h1:hover {
+            cursor: pointer;
+            animation: gradient 5s infinite alternate;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1><a href="coba_buat_dari.html">'Premium Abdullah'</a></h1>
+    
+</body>
+</html>
